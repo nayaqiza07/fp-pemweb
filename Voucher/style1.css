@@ -1,0 +1,17 @@
+img{
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+}
+.garis{
+    border-left: 1px lightgrey solid;
+    border-right: 3px lightgrey dotted;
+    height: 100%;
+}
+.parent{
+    display: grid;
+    place-items: center;
+}
+.btn{
+    display: inline-block;
+}
