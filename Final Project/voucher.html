@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/551b413631.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style1.css">
+    
+
+    <title>Voucher</title>
+</head>
+
+<body class="bg-light">
+
+    <!-- Bagian Navbar -->
+    <section class="container-fluida bg-light">
+      <div class="menu-bar">
+          <nav class="navbar navbar-expand-lg navbar-light bg-info ">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand text-white">
+                <img src="tocomm.png" alt="" width="40" height="35" class="d-inline-block">
+                <strong>To</strong>com
+              </a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item mx-1">
+                    <a class="nav-link active" aria-current="page" href="Fix.html">Home</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link active" href="#">Categories</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link active" href="ArtikelToCom.html">Artikel</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link active" href="about.html" tabindex="-1" aria-disabled="true">About Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex mb-auto me-3">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+              </div>
+      
+              <div class= "icon navbar-nav  fix ml-4 ">
+                <h5>
+                  <table>
+                    <th class="nav-item ">
+                      <a class="nav-link active" aria-current="page" href="about.html"><i class="fas fa-comments me-2 "></i></a>
+                    </th>
+        
+                    <th class="nav-item ">
+                      <a class="nav-link active" aria-current="page" href="fix.html"> <i class="fas fa-bell me-2"></i></a>
+                    </th>
+        
+                    <th class="nav-item ">
+                      <a class="nav-link active" aria-current="page" href="login.html">  <i class="fas fa-user me-2 "></i></a>
+                    </th>
+        
+                    <th class="nav-item ">
+                      <a class="nav-link active" aria-current="page" href="keranjang.html"> <i class="fas fa-shopping-cart me-2">
+                      <span class="tambah-produk">0</span></i></a>
+                    </th>
+                  </table>
+                </h5>
+              </div>
+             
+            </div>
+          </nav>
+        </div>
+    </section>
+
+    <!-- Bagian Voucher -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <h1 class="judul">ToCom</h1>
+          <h2 class="judul">Kode voucher dan diskon terbaru</h2>
+          <hr>
+    
+          <!-- Voucher 1 -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-2">
+                <div class="card-body">
+                  <img src="10.jpg" class="card-img-left" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body garis">
+                  <h5 class="card-title">Kode Voucher ToCom : Akun baru -10%</h5>
+                  <hr>
+                  <p class="card-text">Akun baru? Segera dapatkan diskon 10% untuk satu kali belanja.</p>
+                </div>
+              </div>
+              <div class="col-md-2 text-center parent">
+                <div class="card-body">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contohModal">
+                    Klaim
+                  </button>
+    
+                  <!-- Modal -->
+                  <div class="modal fade" id="contohModal" tabindex="-1" aria-labelledby="contohModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="contohModalLabel">Kode</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <input type="text" class="form-control" id="teks_copy" readonly value="aj5k6hkj54h6kj54jk">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" onclick="copyText()" class="btn btn-primary">Copy</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <p class="card-text"><small class="text-muted">Tersisa 4 hari</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+                
+          <!-- voucher 2 -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-2">
+                <div class="card-body">
+                  <img src="ongkir.jpg" class="card-img-left" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body garis">
+                  <h5 class="card-title">Gratis Ongkos Kirim</h5>
+                  <hr>
+                  <p class="card-text">Gratis ongkos kirim khusus hari ini.</p>
+                </div>
+              </div>
+              <div class="col-md-2 text-center parent">
+                <div class="card-body">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contohModal2">
+                    Klaim
+                  </button>
+          
+                  <!-- Modal -->
+                  <div class="modal fade" id="contohModal2" tabindex="-1" aria-labelledby="contohModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="contohModalLabel">Kode</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <input type="text" class="form-control" id="teks_copy2" value="34k5hhy532523hj">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" onclick="copyText2()" class="btn btn-primary">Copy</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <p class="card-text"><small class="text-muted">Hanya hari ini</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+                
+          <!-- voucher 3 -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-2">
+                <div class="card-body">
+                  <img src="cb.jpg" class="card-img-left" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body garis">
+                  <h5 class="card-title">Cashback s/d 100RB</h5>
+                  <hr>
+                  <p class="card-text">Dapatkan Cashback hingga Rp. 100.000 khusus pengguna baru.</p>
+                </div>
+              </div>
+              <div class="col-md-2 text-center parent">
+                <div class="card-body">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contohModal3">
+                    Klaim
+                  </button>
+          
+                  <!-- Modal -->
+                  <div class="modal fade" id="contohModal3" tabindex="-1" aria-labelledby="contohModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="contohModalLabel">Kode</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <input type="text" class="form-control" id="teks_copy3" value="0909as8d8das90">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" onclick="copyText3()" class="btn btn-primary">Copy</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <p class="card-text"><small class="text-muted">Tersisa 7 hari</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Voucher 4 -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-2">
+                <div class="card-body">
+                  <img src="cb.jpg" class="card-img-left" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body garis">
+                  <h5 class="card-title">Cashback s/d 100RB</h5>
+                  <hr>
+                  <p class="card-text">Dapatkan Cashback hingga Rp. 100.000 khusus pengguna baru.</p>
+                </div>
+              </div>
+              <div class="col-md-2 text-center parent">
+                <div class="card-body">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contohModal4">
+                    Klaim
+                  </button>
+          
+                  <!-- Modal -->
+                  <div class="modal fade" id="contohModal4" tabindex="-1" aria-labelledby="contohModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="contohModalLabel">Kode</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <input type="text" class="form-control" id="teks_copy4" readonly value="1jgg21u3igug4">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" onclick="copyText4()" class="btn btn-primary">Copy</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <p class="card-text"><small class="text-muted">Tersisa 7 hari</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4>Company</h4>
+            <div>
+              <span><a href="#">Privacy Policy</a></span>
+            </div>
+            <div>
+              <span><a href="#">Email Us</a></span>
+            </div>
+            <div>
+              <span><a href="#">Terms Of Service</a></span>
+            </div>
+            <div>
+              <span><a href="Career.html">Careers</a></span>
+            </div>
+            <div>
+              <span><a href="#">Security</a></span>
+            </div>
+            <!-- <span><a href="#">Email us</a></span>
+                          <span><a href="#">Terms of Service</a></span>
+                    -->
+          </div>
+    
+          <div class="col">
+            <h4>Get Help</h4>
+            <div>
+              <span><a href="#">FAQ</a></span>
+            </div>
+            <div>
+              <span><a href="#">Shipping</a></span>
+            </div>
+            <div>
+              <span><a href="#">Returns</a></span>
+            </div>
+            <div>
+              <span><a href="#">Payment Options</a></span>
+            </div>
+            <div>
+              <span><a href="#">Support</a></span>
+            </div>
+    
+    
+          </div>
+    
+          <div class="col">
+            <h4>Online Shop</h4>
+            <div class="new">
+              <span><a href="#">New Arrival</a></span>
+            </div class="promo">
+            <div>
+              <span><a href="#">Promo</a></span>
+            </div>
+            <div>
+              <span><a href="#">New Feature</a></span>
+            </div>
+            <div>
+              <span><a href="#">High Quality</a></span>
+            </div>
+    
+    
+          </div>
+    
+          <div class="col">
+            <h4>Follow Us</h4>
+            <div class="social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <!-- 
+                          <div class="subscribe">
+                              <form>
+                                <input type="email" placeholder="Example@gmail.com" required/>
+                                <input type="submit" value="Subscribe"/>
+                              </form>
+                          </div> -->
+            </div>
+          </div>
+    </footer>
+
+
+
+    <!-- jQuery -->
+    <script type="text/javascript">
+
+            function copyText(){
+                var dicopy = $("#teks_copy").select().val();
+                document.execCommand("copy");
+            }
+
+            function copyText2(){
+                var dicopy2 = $("#teks_copy2").select().val();
+                document.execCommand("copy");
+            }
+
+            function copyText3(){
+                var dicopy3 = $("#teks_copy3").select().val();
+                document.execCommand("copy");
+            }
+
+            function copyText4(){
+                var dicopy4 = $("#teks_copy4").select().val();
+                document.execCommand("copy");
+            }
+
+    </script>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>
